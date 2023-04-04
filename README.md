@@ -1,1 +1,1 @@
-# Minimax_Algorithm_PerformanceChecker
+# TicTocToe with Minimax_Algorithm AI
