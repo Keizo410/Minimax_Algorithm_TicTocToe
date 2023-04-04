@@ -5,6 +5,7 @@
 
 package main.minimax_algorithm_test;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
@@ -17,20 +18,37 @@ public class Minimax_Algorithm_Test {
     public static void main(String[] args) throws InterruptedException {
    
         boolean gameDone = false;
-        TicTacToe game = new TicTacToe();
-        Player p1 = new Player(" X ");
-        game.setPlayer(p1);
+        TicTacPho game = new TicTacPho();
+        Player_AI ai = new Player_AI();
         
   
         while(!gameDone){
+            System.out.println("--------------------------------------------------------------------");
             game.draw();
-            System.out.print("Enter your 2 digit coord: ");
-            Scanner in = new Scanner(System.in);
-            int coord = in.nextInt();
-            TimeUnit.SECONDS.sleep(10);
-            game.Play(coord);
-            gameDone = game.checkGameWinner();
+           if(game.turn==" X "){
+               int[] best = ai.bestmove(game);
+               game.play(best[0], best[1]);
+           }else{
+               System.out.print("Enter your row coordination: ");
+               Scanner inr = new Scanner(System.in);
+               int row = inr.nextInt();
+
+               System.out.print("Enter your col coordination: ");
+               Scanner inc = new Scanner(System.in);
+               int col = inc.nextInt();
+
+                game.play(row, col);
+            
+            }
+           
+            if(game.checkWinner(game.board)!=null){
+                gameDone = true;
+                game.draw();
+                System.out.println("Winner is "+ game.checkWinner(game.board));
+            }
             
         }
     }
 }
+    
+   

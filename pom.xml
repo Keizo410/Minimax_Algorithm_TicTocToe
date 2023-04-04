@@ -11,4 +11,5 @@
         <maven.compiler.target>17</maven.compiler.target>
         <exec.mainClass>main.minimax_algorithm_test.Minimax_Algorithm_Test</exec.mainClass>
     </properties>
+    <name>Minimax_Algorithm_TicTacToe</name>
 </project>
