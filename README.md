@@ -13,4 +13,5 @@ https://github.com/Keizo410/Minimax_Algorithm_TicTocToe/blob/8b6792e73abead614d7
 ### How to initiate the minimax algorithm:
 There are several ways to implement minmax algorithm. Some people creates __2 different function min and max__ for simulating the state each other. For this implementation,
 I used 
-https://github.com/Keizo410/Minimax_Algorithm_TicTocToe/blob/b517e77ac8142ef39f941b55f8636ebebeff1186/src/main/java/main/minimax_algorithm_test/Player_AI.java#LL33C2-L58C6 
+
+https://github.com/Keizo410/Minimax_Algorithm_TicTocToe/blob/b517e77ac8142ef39f941b55f8636ebebeff1186/src/main/java/main/minimax_algorithm_test/Player_AI.java#L33-L58
