@@ -18,4 +18,4 @@ https://github.com/Keizo410/Minimax_Algorithm_TicTocToe/blob/b517e77ac8142ef39f9
 
 ### How MinMax algorithm Works:
 There are several ways to implement minmax algorithm. Some people creates __2 different function min and max__ for simulating the state each other. For this implementation,
-I used 
+I used __isMaximizing__ parameter to identify which player's turn this is. **Important: You have to adjust the decision, heuristics, recusive call parameters depend on which player is responsible for the FIRST move. If this was not properly implemented, AI player chooses self-destructive move.**
