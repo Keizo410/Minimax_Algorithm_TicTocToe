@@ -25,4 +25,4 @@ https://github.com/Keizo410/Minimax_Algorithm_TicTocToe/blob/8cb64ac02b57c154a21
 
 These state space search AI for game playing is heavily based on ***how the game is implemented***. TicTacToe is fairly simple and fun to program for beginners like me:)
 
-###Enjoy!
+### Enjoy!
